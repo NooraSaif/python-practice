@@ -27,7 +27,7 @@ fineds_lists = ['John','Michael','Terry','Eric','Graham','Eric']
 frinds_tuple = ('John','Michael','Terry','Eric','Graham','Eric')
 frinds_set = {'John','Michael','Terry','Eric','Graham','Eric'}
 
-# list
+# -----------------------list---------------------------------
 print(fineds_lists[0])
 print(fineds_lists[2:4])
 print(fineds_lists[-1])
