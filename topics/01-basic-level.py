@@ -71,12 +71,17 @@ del fineds_lists[1] # to delete based on index
 print(fineds_lists)
 
 
+# -----------------------Tuple-------------------------
+# hashable, immutable, ordered, allows duplicates
+# .add() .remove() .update() .discard() .pop() 
+# .union() .intersection() .difference() .symmetric_difference()
+empty = tuple()
 
 
 
 
 
 
-
-tuple
-set
+# ------------------------set----------------------------
+# no duplicates, fast checking
+empty = set()
