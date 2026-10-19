@@ -24,3 +24,35 @@ for i in range(num1, num2):
   if i % 7 == 0:
     print(f"First number divisible by 7: {i}")
     break
+
+"""
+challenge-2-factorial
+
+Write a program that calculates the factorial of a given integer.
+Important: Your program should handle all non-negative integers, including 0 and 1.
+How to approach this problem:
+
+Read an integer input using int(input())
+Initialize a result variable to 1 (since multiplying by 1 doesn't change the result)
+Use a loop to multiply all numbers from 1 to the input number
+Print the final result (just the number, no extra text)
+"""
+n = int(input())
+result = 1
+for i in range(1, n + 1):
+    result *= i
+print(result)
+
+"""
+challenge-3
+
+Write a program that prints all odd numbers from 1 to 10 (inclusive) using a loop.
+Then, in a separate loop, print all numbers from 10 down to 6 (inclusive) in descending order.
+
+"""
+
+for i in range(1, 11, 2):
+  print(i)
+
+for i in range(10, 5, -1):
+  print(i) # result is 10, 9, 8, 7, 6 and 6 is included becuse 6 > 5
