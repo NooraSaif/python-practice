@@ -56,3 +56,32 @@ for i in range(1, 11, 2):
 
 for i in range(10, 5, -1):
   print(i) # result is 10, 9, 8, 7, 6 and 6 is included becuse 6 > 5
+
+"""
+challenge-4 dynamic input
+Write a program that gets a dynamic number of input values.
+The first input tells you how many numbers will follow. The next inputs are whole numbers that you need to sum.
+In the end, print the sum of all the input numbers (not including the first input).
+"""
+n = int(input())
+result = 0
+
+for i in range(n):
+    a = int(input())
+    result += a
+print(result)
+
+"""
+challenge-5 nested loop
+
+"""
+rows = 3
+cols = 2
+
+# Outer loop
+for i in range(rows):
+    print(f"Outer loop iteration: {i}")
+    
+    # Inner loop
+    for j in range(cols):
+        print(f"  Inner loop iteration: {j}")
