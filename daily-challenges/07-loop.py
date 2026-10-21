@@ -85,3 +85,17 @@ for i in range(rows):
     # Inner loop
     for j in range(cols):
         print(f"  Inner loop iteration: {j}")
+
+"""
+challenge-6 
+Write a program that counts the number of even numbers between 10 and 50 (inclusive).
+Use a for loop and an if statement to check if each number is even and count how many even numbers there are.
+Store the count in a variable called count_even.
+"""
+count_even = 0
+for i in range(10, 51):
+    if i % 2 == 0:
+        count_even += 1
+print(count_even)
+
+
