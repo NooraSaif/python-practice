@@ -98,4 +98,56 @@ for i in range(10, 51):
         count_even += 1
 print(count_even)
 
+"""
+challenge-7
+Create a program that performs the following tasks using range():
+task-1: Print all numbers from 30 to 80 (inclusive) that are divisible by 4
+task-2: Print the first 8 odd numbers starting from 15
+task-3: Count backwards from 50 to 10 (inclusive), showing only numbers divisible by 5
+task-4: Calculate and print the product of all numbers from 1 to 30 (inclusive) that are divisible by 3
+"""
+# Task 1: Numbers divisible by 4 between 30-80
+print("Numbers divisible by 4 between 30-80:")
+for num in range(30, 81):
+    if num % 4 == 0:
+        print(num, end=", ")
+print()  # new line
 
+# Task 2: First 8 odd numbers from 15
+print("\nFirst 8 odd numbers from 15:")
+for num in range(15, 30, 2):  # 15 to 29 stepping by 2
+    print(num, end=", ")
+print()
+
+# Task 3: Counting backwards, divisible by 5
+print("\nCounting backwards, divisible by 5:")
+for num in range(50, 9, -5):  # 50 to 10 stepping by -5
+    print(num, end=", ")
+print()
+
+# Task 4: Product of numbers divisible by 3
+print("\nProduct of numbers divisible by 3 (1-30):")
+product = 1
+for num in range(3, 31, 3):  # stepping by 3 directly
+    product *= num
+print(product)
+
+""" 
+challenge-8
+Write a program that finds all pairs of numbers that multiply to give n using numbers from 1 to n (inclusive).
+The program should show all possible combinations, including duplicate pairs in reverse order. For example, both "1 6" and "6 1" should be shown, as they are considered different arrangements of the same pair. Numbers can also be paired with themselves if their product equals n.
+
+Important: Only consider numbers in the range from 1 to n. If n is less than 1, no pairs exist.
+"""
+n = 12
+for i in range(1, n+1):
+    for j in range(1, n+1):
+        if i * j == n:
+            print(i, j)
+# result:
+# 1 12
+# 2 6
+# 3 4
+# 4 3
+# 6 2
+# 12 1
